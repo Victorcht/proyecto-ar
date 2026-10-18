@@ -1,0 +1,33 @@
+  <!--
+  Texturas extraidas de Pexels libres de derechos
+  Imagenes 360 producidas en blender.
+  -->
+  <html>
+    <head>
+        <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-environment-component@1.0.0/dist/aframe-environment-component.min.js"></script>
+    </head>
+    <body>
+        <!-- ESCENA -->
+        <a-scene >
+            <a-assets>
+                <img id="cubs" src="image360.png">
+                <img id="textura" src="pexels-vedanti-66315-242616.jpg">
+            </a-assets>
+
+            <a-sky id="image-360" radius="40" src="#cubs"></a-sky>
+            
+            <a-box position="0 0 0" rotation="0 0 0" scale="3 2,2 3"></a-box>    
+
+            <a-box position="-2 2 0" rotation="0 0 0" scale="1 3 1" src="#textura"></a-box>    
+
+            <a-text value="Bienvenido a Codigo Lyoko" color="#500000" position="-2 2 -3" scale="1.5 1.5 1.5"></a-text>
+
+            <a-link href="video.html" title="Mundo animado"peekMode="false" position="-4 2 -3" rotation="0 90 0"></a-link> 
+
+            <a-camera rotation="0 90 0">
+                <a-cursor color="#FF66FF"></a-cursor>
+            </a-camera>
+        </a-scene>
+    </body>
+  <html>
